@@ -15,182 +15,171 @@
 */
 
 //Code here
-var me ={
-  name:"Daniel",
-  age:27
-}
+var me = {
+  name: "Daniel",
+  age: 27
+};
 alert(me.name);
 
-////////// PROBLEM 2 //////////
+// ////////// PROBLEM 2 //////////
 
-/*
-  Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. 
-  Have the values to those keys be your favorite thing in that category.
-*/
+// /*
+//   Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday.
+//   Have the values to those keys be your favorite thing in that category.
+// */
 
-//Code here
-var favoriteThings={
-band:"tizita",
-food:"Cheese burger",
-person:"Daniel",
-book:"The stranger",
-movie:"Titanic",
-holiday:"christmas"
+// //Code here
+var favoriteThings = {
+  band: "tizita",
+  food: "Cheese burger",
+  person: "Daniel",
+  book: "The stranger",
+  movie: "Titanic",
+  holiday: "christmas"
+};
 
-}
+// /*
+//   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
+// */
 
+// //Code here
 
-/*
-  After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
-*/
+favoriteThings.car = "Toyota";
+favoriteThings.brand = "Nike";
 
-//Code here
+// /*
+//   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
+// */
 
-favoriteThings.car="Toyota";
-favoriteThings.brand="Nike";
+// //Code here
 
-/*
-  Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
-*/
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
-//Code here
+// ////////// PROBLEM 3 //////////
 
-favoriteThings.food="Chicken Nuggets";
-favoriteThings.book="Harry Potter";
-
-////////// PROBLEM 3 //////////
-
-/* 
-  Create an empty Object called backPack. 
-  Now, create a variable called 'item' and set it equal to the string 'firstPocket'. 
-  Using bracket notation, add a 'firstPocket' key (or property) to backPack, using 'item'.
-  Set the value of that key to 'chapstick'.
-  Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
-*/
+// /*
+//   Create an empty Object called backPack.
+//   Now, create a variable called 'item' and set it equal to the string 'firstPocket'.
+//   Using bracket notation, add a 'firstPocket' key (or property) to backPack, using 'item'.
+//   Set the value of that key to 'chapstick'.
+//   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
+// */
 
 //Code here
+
 let backPack = {};
-let item = 'firstPocket';
-backPack[item] = 'chapstick';
-backPack.color = 'black';
+let item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "black";
 
-/*
-  After you do the above, alert your entire backPack object.
-*/
+// /*
+//   After you do the above, alert your entire backPack object.
+// */
 
-//Code here
+// //Code here
 
 alert(backpack);
 
-/*
-You probably noticed that it just alerted [object Object].
-Alerting to see the data in your Object doesn't work so well.
-Instead, console.log your whole backPack object and then check out the console. 
-*/
+// /*
+// You probably noticed that it just alerted [object Object].
+// Alerting to see the data in your Object doesn't work so well.
+// Instead, console.log your whole backPack object and then check out the console.
+// */
 
-//Code here
+// //Code here
 
 console.log(backpack);
 
-////////// PROBLEM 4 //////////
+// ////////// PROBLEM 4 //////////
 
-// Do not edit the code below.
+// // Do not edit the code below.
 var user2 = {
-  name: 'Ty',
+  name: "Ty",
   age: 24,
-  pwHash: 'U+Ldlngx2BYQk',
-  email: 'ty33@gmail.com',
-  birthday: '05/02/1990',
-  username: 'tylermcginnis33'
+  pwHash: "U+Ldlngx2BYQk",
+  email: "ty33@gmail.com",
+  birthday: "05/02/1990",
+  username: "tylermcginnis33"
 };
-// Do not edit the code above.
+// // Do not edit the code above.
 
-/* 
-  Let's say I, the user, decided to change my name and email address to the following:
-  name -> 'Tyler S. McGinnis' and email -> 'tyler.mcginnis@devmounta.in'. 
-  Make that change without modifying the original object code above.
-*/
+// /*
+//   Let's say I, the user, decided to change my name and email address to the following:
+//   name -> 'Tyler S. McGinnis' and email -> 'tyler.mcginnis@devmounta.in'.
+//   Make that change without modifying the original object code above.
+// */
 
-//Code Here
+// //Code Here
 
-user2.name = 'Tyler S. McGinnis';
-user2.email = 'tyler.mcginnis@devmounta.in';
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
+// /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
+// ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
 
+// ////////// PROBLEM 5 //////////
 
+// /*
+//   Create an empty object called methodCollection.
+// */
 
+// //Code Here
 
+var methodCollection = {};
 
+// /*
+//   Now add two methods (functions that are properties on objects) to your methodCollection object.
+//   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
+// */
 
-/////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
-////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
+// //Code Here
+methodCollection.alertHello = function() {
+  alert("hello");
+};
 
+methodCollection.logHello = function() {
+  console.log("hello");
+};
 
+// /*
+//   Now call your alertHello and logHello methods.
+// */
 
-
-
-
-
-////////// PROBLEM 5 //////////
-
-/*
-  Create an empty object called methodCollection.
-*/
-
-//Code Here
-
-var methodCollection={};
-
-/*
-  Now add two methods (functions that are properties on objects) to your methodCollection object. 
-  One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
-*/
-
-//Code Here
-methodCollection.alertHello = function(){alert('hello');}
-  
-  methodCollection.logHello = function(){ console.log('hello'); }
-
-/*
-  Now call your alertHello and logHello methods.
-*/
-
-//Code Here
+// //Code Here
 methodCollection.alertHello();
 
 console.log(methodCollection.logHello());
 
+// ////////// PROBLEM 6 //////////
 
+// /*
+//   Create a function called makePerson which takes in name, birthday, ssn as its parameters.
+//   Return a new object with all of the information that you passed in.
+// */
 
-////////// PROBLEM 6 //////////
-
-/* 
-  Create a function called makePerson which takes in name, birthday, ssn as its parameters. 
-  Return a new object with all of the information that you passed in.
-*/
-
-//Code Here
-function makePerson(name,birthday,ssn){
-return  objec={name,
-birthday,
-ssn}
+// //Code Here
+function makePerson(name, birthday, ssn) {
+  return (objec = {
+    name,
+    birthday,
+    ssn
+  });
 }
-makePerson("Daniel",1991,889225664)
-////////// PROBLEM 7 //////////
+makePerson("Daniel", 1991, 889225664);
+// ////////// PROBLEM 7 //////////
 
-/*
-  Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object.
-  Return that object so that whenever you invoke makeCard, you get a brand new credit card.
-*/
+// /*
+//   Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object.
+//   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
+// */
 
-//Code Here
-function makeCard(cardNumber,expirationDate,securityCode) {
-  return creditCard = {
+// //Code Here
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return (creditCard = {
     cardNumber,
     expirationDate,
     securityCode
-  }
-
-};
-makeCard(098123109238,'04/21/25',231)
-
+  });
+}
+makeCard(098123109238, "04/21/25", 231);
